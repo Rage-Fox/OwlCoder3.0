@@ -4,7 +4,7 @@ typedef long long ll;
 const ll MAXN=1e6+5;
 vector<ll> primes(MAXN,1);
 void generate_seive(){
-	primes[0]=primes[1]=1;
+	primes[0]=primes[1]=0;
 	for(int i=2;i*i<=MAXN;i++){
 		if(primes[i]==1){
 			for(int j=i*i;j<=MAXN;j+=i){
